@@ -148,7 +148,6 @@ int emacs_module_init (struct emacs_runtime *runtime) {
 
   DEFUN("emt--token-range-at-index-helper", \
         tokenRangeAtIndex, 2, 2, \
-        "Return the range of word forward at ARG2 in ARG1.\n\n" \
-        "If current point is at bound of a word, return the one forward.", NULL);
+        "Return the range of current word at ARG2 in ARG1.\n", NULL);
   return 0;
 }
